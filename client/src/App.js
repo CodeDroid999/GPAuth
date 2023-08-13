@@ -7,7 +7,6 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Authenticated } from "./components/authenticated";
 import { Navbar } from "./components/navbar";
-import { Howtouse } from "./components/howtouse";
 
 function App() {
   return (
