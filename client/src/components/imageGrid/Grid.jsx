@@ -45,12 +45,12 @@ const Grid = (props) => {
   return (
     <>
       <div className="flex flex-col">
-        <div className="md:mx-auto md:w-2/3 grid grid-cols-2 lg:grid-cols-3">
+        <div className="bg-white md:mx-auto md:w-2/3 grid grid-cols-2 lg:grid-cols-3">
           {props.images.map((img, index) => (
             <div key={img.id} className="">
               {props.isLoading ? (
                 <SkeletonTheme
-                  baseColor="#5294e0"
+                  baseColor="#fffff"
                   highlightColor="#a1cdff"
                   borderRadius="0.25rem"
                   duration={1}

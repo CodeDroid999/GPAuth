@@ -63,7 +63,7 @@ function Canvas({ modalIsOpen, setIsOpen, onResult  }) {
         contentLabel="Example Modal"
       >
 
-        <div className="overflow-auto mx-auto" >
+        <div className="overflow-auto mx-auto mt-20" >
           <div className="flex">
             <p className="mx-auto font-bold">please draw : {rand}</p>
           </div>

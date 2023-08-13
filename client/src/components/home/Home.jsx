@@ -10,6 +10,7 @@ const IMAGE = `https://picsum.photos/${DIMENSION}`;
 
 function Home() {
   return (
+  
       <Canvas />
   );
 }

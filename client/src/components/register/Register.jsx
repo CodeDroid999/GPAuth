@@ -214,9 +214,9 @@ function Register() {
           setShowCaptcha(false);
         }}
       />
-      <div className="mx-auto my-2 font-light flex justify-center text-center">
-        <form className="bg-white pt-6 w-2/3 flex md:flex-row flex-col justify-center">
-          <div className="mb-4 mr-2">
+      <div className="mx-auto my-2 mt-20 font-light flex justify-center text-left">
+        <form className="bg-white pt-6 w-2/3 flex flex-col justify-center">
+          <div className="mb-4 m-4">
             <label className="text-gray-700 mb-2 text-lg" htmlFor="name">
               Name
             </label>
@@ -230,7 +230,7 @@ function Register() {
               onChange={(e) => setName(e.target.value)}
             />
           </div>
-          <div className="mb-4 mr-2">
+          <div className="mb-4 m-4">
             <label className="text-gray-700 mb-2 text-lg" htmlFor="email">
               Email
             </label>
@@ -245,19 +245,19 @@ function Register() {
             />
           </div>
 
-          <div className="mb-4 mr-2">
+          <div className="mb-4 m-4">
             <label className="text-gray-700 mb-2 text-lg" htmlFor="category">
-              Category for image
+              Set password 
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="category"
-              placeholder="Try 'cats'"
+              placeholder="Search images. Try 'cats'"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
             />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="bg-white flex items-center justify-center m-4">
             <button
               className="mx-2 btn btn-sm btn-secondary py-2 px-4"
               type="button"
