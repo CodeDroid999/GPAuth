@@ -35,7 +35,7 @@ function Canvas({ modalIsOpen, setIsOpen, onResult  }) {
     await worker.terminate();
     console.log("text",text)
     console.log("rand",rand)
-    if(rand==text){
+    if(rand===text){
       console.log("Success");
       onResult(true);
     }
