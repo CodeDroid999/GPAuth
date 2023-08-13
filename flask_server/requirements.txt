@@ -1,0 +1,7 @@
+torch
+torchvision
+transformers
+spacy
+flask
+flask_cors
+# python -m spacy download en

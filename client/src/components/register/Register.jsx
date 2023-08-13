@@ -9,12 +9,12 @@ import Canvas from "../canvas/Canvas";
 import imageCaption from "./Story";
 
 const unsplash = createApi({
-  accessKey: process.env.REACT_APP_UNSPLASH_ACCESS_KEY,
+  accessKey:"2NfOmW6vR7sVZCyoDnN9e5diVnPBANGg-Z8ITB-zsrM",
   fetch: fetch,
 });
 
-const NUM_TILES = Number(process.env.REACT_APP_NUM_TILES);
-const NUM_ROUNDS = Number(process.env.REACT_APP_NUM_ROUNDS);
+const NUM_TILES =5;
+const NUM_ROUNDS =3;
 
 function hashImage(image, ref_point) {
   const str = image + ref_point.join();
@@ -145,7 +145,6 @@ function Register() {
           email,
           passwordHash,
           images: [sequences[0].image, ...encryptedImages],
-          captions : captionList,
         });
 
         if (res.status === 200) {
@@ -189,6 +188,8 @@ function Register() {
     })
 
   };
+
+  
 
   return (
     <Fragment>
@@ -273,6 +274,7 @@ function Register() {
           </div>
         </form>
       </div>
+      {console.log("Current roundNumber:", roundNumber)}
       {roundNumber === NUM_ROUNDS ? (
         <div className="flex flex-col">
           <p className="mx-auto text-3xl my-2">Woo-hoo! You're almost there!</p>
