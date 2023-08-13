@@ -8,7 +8,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 const Grid = (props) => {
   const Box1 = ({ children }) => (
-    <a
+    <a href="/"
       style={{
         //border: "1px solid #ccc",
         display: "block",
@@ -21,27 +21,26 @@ const Grid = (props) => {
     </a>
   );
 
-  const Box2 = ({ children }) => (
-    <a
-      style={{
-        border: "1px solid #ccc",
-        display: "block",
-        fontSize: 16,
-        lineHeight: 2,
-        padding: 20,
-        marginBottom: 10,
-        width: 100,
-      }}
-    >
-      {children}
-    </a>
-  );
+  //const Box2 = ({ children }) => (
+   // <a
+   //   style={{
+   //     border: "1px solid #ccc",
+  //      display: "block",
+   //     fontSize: 16,
+   //     lineHeight: 2,
+   //     padding: 20,
+  //      marginBottom: 10,
+   //     width: 100,
+  //    }}
+  //  >
+ //   </a>
+ // );
 
-  const submitSequence = (seq) => console.log(seq);
+  //const submitSequence = (seq) => console.log(seq);
 
   const [showModal, setShowModal] = useState(false);
   const [currentImage, setCurrentImage] = useState(false);
-  const [currentImgIndex, setCurrentImgIndex] = useState(null);
+  const [setCurrentImgIndex] = useState(null);
 
   return (
     <>
