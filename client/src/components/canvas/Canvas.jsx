@@ -46,9 +46,9 @@ function Canvas({ modalIsOpen, setIsOpen, onResult  }) {
 
     closeModal()
   };
-  function openModal() {
-    setIsOpen(true);
-  }
+  //function openModal() {
+   // setIsOpen(true);
+  //s}
 
   function closeModal() {
     setIsOpen(false);
