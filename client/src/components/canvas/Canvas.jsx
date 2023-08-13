@@ -70,7 +70,7 @@ function Canvas({ modalIsOpen, setIsOpen, onResult  }) {
           </div>
           <CanvasDraw ref={canvasRef} hideGrid={true} className="mx-auto" />
           <div className="flex">
-            <a onClick={() => handleSubmit()} className="btn ml-auto mt-4">Submit</a>
+            <a onClick={() => handleSubmit()} className="btn ml-auto mt-4"><button>submit</button> </a>
           </div>
 
         </div>
