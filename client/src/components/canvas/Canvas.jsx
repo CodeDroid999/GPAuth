@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {useRef} from "react";
 import CanvasDraw from "react-canvas-draw";
 import Modal from 'react-modal';
 import { createWorker } from "tesseract.js"
 import { Buffer } from 'buffer';
+
 
 const customStyles = {
   content: {
