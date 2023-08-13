@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useState } from "react";
 import { ImageGrid } from "../imageGrid";
 import { createApi } from "unsplash-js";
 import CryptoJS from "crypto-js";
