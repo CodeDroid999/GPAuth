@@ -16,6 +16,7 @@ const Grid = (props) => {
         padding: 40,
       }}
     >
+      {" "}
       {children}
     </a>
   );
@@ -98,7 +99,7 @@ const Grid = (props) => {
                         onClick={() => setShowModal(false)}
                       >
                         <motion.span className="h-6 w-6 text-3xl block text-red-700">
-                          <XCircle /> 
+                          <XCircle />
                         </motion.span>
                       </motion.button>
                     </motion.div>
