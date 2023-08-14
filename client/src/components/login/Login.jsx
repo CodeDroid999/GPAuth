@@ -6,8 +6,8 @@ import { toast } from "react-toastify";
 import { navigate } from "@reach/router";
 import Canvas from "../canvas/Canvas";
 
-const NUM_TILES = Number(process.env.REACT_APP_NUM_TILES);
-const NUM_ROUNDS = Number(process.env.REACT_APP_NUM_ROUNDS);
+const NUM_TILES =5;
+const NUM_ROUNDS =3;
 
 function hashImage(image, ref_point) {
   const str = image + ref_point.join();
@@ -183,7 +183,7 @@ function Login() {
           setShowCaptcha(false);
         }}
       />
-      <div className="m-8 mt-20 font-light flex justify-center text-center">
+      <div className="m-8 font-light flex justify-center text-center mt-20">
         <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-xs">
           <div className="mb-4">
             <label className="block text-gray-700 mb-2 text-lg" htmlFor="email">

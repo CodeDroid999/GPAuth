@@ -8,7 +8,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 const Grid = (props) => {
   const Box1 = ({ children }) => (
-    <a href="/"
+    <a
       style={{
         //border: "1px solid #ccc",
         display: "block",
@@ -16,41 +16,41 @@ const Grid = (props) => {
         padding: 40,
       }}
     >
-      {" "}
       {children}
     </a>
   );
 
-  //const Box2 = ({ children }) => (
-   // <a
-   //   style={{
-   //     border: "1px solid #ccc",
-  //      display: "block",
-   //     fontSize: 16,
-   //     lineHeight: 2,
-   //     padding: 20,
-  //      marginBottom: 10,
-   //     width: 100,
-  //    }}
-  //  >
- //   </a>
- // );
+  const Box2 = ({ children }) => (
+    <a
+      style={{
+        border: "1px solid #ccc",
+        display: "block",
+        fontSize: 16,
+        lineHeight: 2,
+        padding: 20,
+        marginBottom: 10,
+        width: 100,
+      }}
+    >
+      {children}
+    </a>
+  );
 
-  //const submitSequence = (seq) => console.log(seq);
+  const submitSequence = (seq) => console.log(seq);
 
   const [showModal, setShowModal] = useState(false);
   const [currentImage, setCurrentImage] = useState(false);
-  const [setCurrentImgIndex] = useState(null);
+  const [currentImgIndex, setCurrentImgIndex] = useState(null);
 
   return (
     <>
       <div className="flex flex-col">
-        <div className="bg-white md:mx-auto md:w-2/3 grid grid-cols-2 lg:grid-cols-3">
+        <div className="md:mx-auto md:w-2/3 grid grid-cols-2 lg:grid-cols-3">
           {props.images.map((img, index) => (
             <div key={img.id} className="">
               {props.isLoading ? (
                 <SkeletonTheme
-                  baseColor="#fffff"
+                  baseColor="#5294e0"
                   highlightColor="#a1cdff"
                   borderRadius="0.25rem"
                   duration={1}
@@ -98,7 +98,7 @@ const Grid = (props) => {
                         onClick={() => setShowModal(false)}
                       >
                         <motion.span className="h-6 w-6 text-3xl block text-red-700">
-                          <XCircle />
+                          <XCircle /> 
                         </motion.span>
                       </motion.button>
                     </motion.div>

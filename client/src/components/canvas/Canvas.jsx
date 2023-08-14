@@ -1,9 +1,8 @@
-import React, {useRef} from "react";
+import React, { useEffect, useRef, useState } from "react";
 import CanvasDraw from "react-canvas-draw";
 import Modal from 'react-modal';
 import { createWorker } from "tesseract.js"
 import { Buffer } from 'buffer';
-
 
 const customStyles = {
   content: {
@@ -35,7 +34,7 @@ function Canvas({ modalIsOpen, setIsOpen, onResult  }) {
     await worker.terminate();
     console.log("text",text)
     console.log("rand",rand)
-    if(rand===text){
+    if(rand==text){
       console.log("Success");
       onResult(true);
     }
@@ -46,9 +45,9 @@ function Canvas({ modalIsOpen, setIsOpen, onResult  }) {
 
     closeModal()
   };
-  //function openModal() {
-   // setIsOpen(true);
-  //s}
+  function openModal() {
+    setIsOpen(true);
+  }
 
   function closeModal() {
     setIsOpen(false);
@@ -70,7 +69,7 @@ function Canvas({ modalIsOpen, setIsOpen, onResult  }) {
           </div>
           <CanvasDraw ref={canvasRef} hideGrid={true} className="mx-auto" />
           <div className="flex">
-            <a onClick={() => handleSubmit()} className="btn ml-auto mt-4"><button>submit</button> </a>
+            <a onClick={() => handleSubmit()} className="btn ml-auto mt-4">Submit</a>
           </div>
 
         </div>

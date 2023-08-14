@@ -278,9 +278,9 @@ function Register() {
       {roundNumber === NUM_ROUNDS ? (
         <div className="flex flex-col">
           <p className="mx-auto text-3xl my-2">Woo-hoo! You're almost there!</p>
-          <button className="btn btn-sm btn-primary mx-auto" onClick={register}>
+          <a href="/login"><button className="btn btn-sm btn-primary mx-auto">
             Confirm registration
-          </button>
+          </button></a>
         </div>
       ) : (
         <ImageGrid
